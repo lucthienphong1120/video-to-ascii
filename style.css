@@ -12,7 +12,7 @@ body{
 }
 #container{
     width: 25%;
-    margin: 0 auto;
+    margin-left: 75px;
     border: 2px solid white;
     box-shadow: 5px 5px 10px #999;
     background-color: #ccc;
