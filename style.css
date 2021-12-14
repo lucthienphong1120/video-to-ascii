@@ -30,12 +30,9 @@ body{
     color: white;
 }
 .nav:hover {
-    background-color: #fff;
-    color: black;
+    cursor: pointer;
 }
 .nav input{
-    border: 1px solid black;
-    border-radius: 4px;
     width: 100%;
 }
 #p1{

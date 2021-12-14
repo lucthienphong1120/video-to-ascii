@@ -1,6 +1,6 @@
 
 var interval, video = document.getElementsByTagName("video")[0],  
-stage = document.getElementById("stage"),  //stage ở đây là phần div dùng để chứa kí tự chạy
+stage = document.getElementById("stage"),
 canvas = document.createElement("canvas"),  
 captureImage = function () {  
     var ctx;  
@@ -25,7 +25,7 @@ endCapture = function () {
 },  
 //hàm chạy khi bắt đầu xem
 play = function () {  
-    var file = document.getElementById('file').files[0];  
+    var file = document.getElementById('file').files[0];
     var url = URL.createObjectURL(file);  
     var button=document.getElementById('video1')
     button.setAttribute('style','display:block')
@@ -37,7 +37,7 @@ play = function () {
         alert("Hãy chọn tệp tin");  
     }  
     console.log(url);  
-    video.src = url;  
+    video.src = url;
     video.play();  
 };  
 //phần lắng nghe hành động của người dùng khi tác động vào video
@@ -48,11 +48,7 @@ video.addEventListener("playing", function () {
 endCapture();  
 beginCapture();  
 });
-
-
-/**
-* Created by Văn
-*/  
+ 
 var map=getCharsMap();    
 function toChars(context, width, height, rowChars) {  
     var pixels = [],  
@@ -97,8 +93,7 @@ function toChars(context, width, height, rowChars) {
 }  
 // xác định kí tự chạy vào map
 function getCharsMap() {  
-    var chars = ['@', '#','$','!', '~', '`',  ];
-    // var chars = ['@','$','#','w','i','#', 'i', '-','-','`' ,'`' ]  (đây là đoạn kí tự mình setup nếu dùng pixel=w*h)
+    var chars = ['@','$','#','w','i','#', 'i', '-','-','`' ,'`'];
     var step = 25,  
         map = {};  
     for (var i = 0; i < 256; i++) {  
